@@ -23,7 +23,7 @@
 // if we don't provide Semicolon ; at the end of cy. statements, then Cypress automatically concenates ; at the end of cy. statements
 // in the websites which are developed using angular js, if we see the class names with 'ng' then avoid using class names in CSS selector because class names change dynamically when the website loads
 // Note: One of the best things about cypress is that, if the test runner & browser is open & if we make additional changes to the spec file, then if we can just save the spec file, test starts running automatically from the first step.
-describe('My First Test Suite',function(){
+describe('My First Test Suite - UPDATED',function(){
 
 it ('My First Test Case',function(){
 
