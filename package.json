@@ -1,0 +1,20 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "test_headed": "npm run test -- --headed",
+    "test_chrome": "npm run test_headed -- --browser chrome",
+    "test_onespecfile": "npm run test_headed -- --spec cypress/integration/examples/Test8Framework.js",
+    "test_edge": "npm run test_headed -- --browser edge",
+    "test_record": "npm run test_headed -- --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
+    "test_multiplespecfiles_all_files_in_a_folder": "npm run test_headed -- --spec \"cypress/integration/Greenkart/*\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.0"
+  }
+}
