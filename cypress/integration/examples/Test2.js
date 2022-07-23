@@ -24,7 +24,7 @@
 // Semicolon ; at the end of cy. statements is optional
 // if we don't provide Semicolon ; at the end of cy. statements, then Cypress automatically concenates ; at the end of cy. statements
 
-describe('My Second Test Suite - UPDATED',function(){
+describe('My Second Test Suite',function(){
 
 it ('My Second Test Case',function(){
 
