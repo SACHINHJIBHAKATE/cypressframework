@@ -24,7 +24,7 @@ Given('customer launch the Ecommerce website', function()
 })
 
 // This code populates the name, select the gender & select the Shop link on the HomePage
-When('the customer populates the basic details on the Home Page', function()
+When('customer populates the basic details on the HomePage', function()
 {
     homePage.getNamefield().type(this.data.name)
     homePage.getGenderdropdown().select(this.data.gender)
@@ -32,7 +32,7 @@ When('the customer populates the basic details on the Home Page', function()
 })
 
 // This code selects the products & select 'Checkout' button on the Products Page
-And('And selects the products from the ProductsPage', function()
+And('selects the products from the ProductsPage', function()
 {
     this.data.product.forEach(element => {
             
@@ -43,14 +43,14 @@ And('And selects the products from the ProductsPage', function()
 })
 
 // This code selects the 'Checkout' button on the Checkout Page
-And('confirm checkout from the CheckoutPage', function()
+And('confirms checkout from the CheckoutPage', function()
 {
     checkoutPage.getCheckoutelement().click()
 })
 
 // This code selects the country, select the terms & conditions checkbox 
 // & select 'Purchase' button on the Purchase Page
-And('And confirms purchase from the PurchasePage', function()
+And('confirms purchase from the PurchasePage', function()
 {
     purchasePage.getCountryfieldelement().type('India')
     purchasePage.getCountry().click()

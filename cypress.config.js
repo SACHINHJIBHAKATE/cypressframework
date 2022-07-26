@@ -29,6 +29,7 @@ module.exports = defineConfig({
   
   e2e: {
     setupNodeEvents(on, config) {
+      const cucumber = require('cypress-cucumber-preprocessor').default;
       on('file:preprocessor', cucumber())
     },
     // Following line is added for Test Runner to identify the location of the spec files (test cases)

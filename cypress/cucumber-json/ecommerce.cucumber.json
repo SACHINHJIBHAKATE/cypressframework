@@ -1,0 +1,123 @@
+[
+  {
+    "description": "    End to End Ecommerce website automation",
+    "keyword": "Feature",
+    "name": "Ecommerce website automation",
+    "line": 1,
+    "id": "ecommerce-website-automation",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "ecommerce-website-automation;purchase-products-from-the-ecommerce-website",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Purchase products from the Ecommerce website",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "customer launch the Ecommerce website",
+            "result": {
+              "status": "passed",
+              "duration": 743000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "customer populates the basic details on the HomePage",
+            "result": {
+              "status": "passed",
+              "duration": 1779000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "selects the products from the ProductsPage",
+            "result": {
+              "status": "passed",
+              "duration": 703000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "confirms checkout from the CheckoutPage",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "confirms purchase from the PurchasePage",
+            "result": {
+              "status": "passed",
+              "duration": 5520000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "products purchase is successful",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "ecommerce-website-automation;launch-the-ecommerce-website-&-populate-basic-details",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Launch the Ecommerce website & populate basic details",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "customer launch the Ecommerce website",
+            "result": {
+              "status": "passed",
+              "duration": 375000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "customer populates the basic details on the HomePage",
+            "result": {
+              "status": "passed",
+              "duration": 601000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

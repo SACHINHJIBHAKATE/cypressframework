@@ -14,12 +14,19 @@
     "test_multiplespecfiles_all_files_in_a_folder": "npm run test_headed -- --spec \"cypress/integration/Greenkart/*\""
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.3.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^1.21.4"
   }
 }
