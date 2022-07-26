@@ -1,6 +1,7 @@
 // We need to import the page objects classes (HomePage & ProductsPage), so we can call the HomePage & ProductsPage class methods from this test spec
 // since this test spec is in 'examples' folder, if we give ../ the control moves to the parent folder which is 'integration' folder
 // then from the 'integration' parent folder, we need navigate to child folder 'pageObjects' and then navigate to the page objects classes 'HomePage' & 'ProductsPage' under it 
+
 import HomePage from '../../support/pageObjects/HomePage'
 import ProductsPage from '../../support/pageObjects/ProductsPage'
 import CheckoutPage from '../../support/pageObjects/CheckoutPage'
@@ -28,6 +29,8 @@ describe('My Eighth Test Suite',function(){
 
         // create object of the page objects class (HomePage), so we can call the methods of the HomePage class using the object.method name 
         // create object of the page objects class (ProductsPage), so we can call the methods of the ProductsPage class using the object.method name 
+        // create object of the page objects class (CheckoutPage), so we can call the methods of the CheckoutPage class using the object.method name 
+        // create object of the page objects class (PurchasePage), so we can call the methods of the PurchasePage class using the object.method name 
         const homePage = new HomePage()
         const productsPage = new ProductsPage()
         const checkoutPage = new CheckoutPage()
@@ -110,7 +113,7 @@ describe('My Eighth Test Suite',function(){
         this.data.product.forEach(element => {
             
             cy.selectProduct(element) 
-        });
+        })
 
         // This will click the 'Checkout' button on the products page
         // cy.contains('Checkout').click()

@@ -4,7 +4,7 @@
 // In the earlier versions of Cypress, for auto suggestions, we had to explicitly add the below line to the spec file (test case)
 // /// <reference types="Cypress" />
 
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   
@@ -29,10 +29,11 @@ module.exports = defineConfig({
   
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      on('file:preprocessor', cucumber())
     },
     // Following line is added for Test Runner to identify the location of the spec files (test cases)
     // The file (cypress.config.js) was automatically created by Test Runner once we selected 'E2E Testing' in Test Runner' & therefore Test Runner has knowledge about this file
-    specPattern: 'cypress/integration/**/*.js'
+    // specPattern: 'cypress/integration/**/*.js'
+    specPattern: 'cypress/integration/examples/BDD/*.feature'
   },
-});
+})

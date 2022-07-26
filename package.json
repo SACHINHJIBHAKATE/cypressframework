@@ -13,9 +13,13 @@
     "test_record_onespecfile": "npm run test_onespecfile -- --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
     "test_multiplespecfiles_all_files_in_a_folder": "npm run test_headed -- --spec \"cypress/integration/Greenkart/*\""
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.3.0"
+    "cypress": "^10.3.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }
