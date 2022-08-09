@@ -13,6 +13,7 @@ module.exports = defineConfig({
   // The default global configurations can be overriden in 'cypress.config.js' file e.g. value for 'defaultCommandTimeout' is overriden to 8000 ms (8 seconds)
   defaultCommandTimeout: 8000,
   pageLoadTimeout: 300000,
+  CYPRESS_VERIFY_TIMEOUT: 10000,
 
   env:
   {
