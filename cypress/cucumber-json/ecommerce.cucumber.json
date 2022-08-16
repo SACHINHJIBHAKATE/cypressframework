@@ -28,7 +28,7 @@
             "name": "customer launch the Ecommerce website",
             "result": {
               "status": "passed",
-              "duration": 680000000
+              "duration": 1593000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "customer populates the basic details on the HomePage",
             "result": {
               "status": "passed",
-              "duration": 1719000000
+              "duration": 2582000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "selects the products from the ProductsPage",
             "result": {
               "status": "passed",
-              "duration": 716000000
+              "duration": 1141000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "confirms checkout from the CheckoutPage",
             "result": {
               "status": "passed",
-              "duration": 217000000
+              "duration": 352000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "confirms purchase from the PurchasePage",
             "result": {
               "status": "passed",
-              "duration": 5607000000
+              "duration": 6156000000
             }
           },
           {
@@ -78,7 +78,7 @@
             "name": "products purchase is successful",
             "result": {
               "status": "passed",
-              "duration": 52000000
+              "duration": 144000000
             }
           }
         ]
@@ -103,7 +103,7 @@
             "name": "customer launch the Ecommerce website",
             "result": {
               "status": "passed",
-              "duration": 469000000
+              "duration": 452000000
             }
           },
           {
@@ -113,7 +113,7 @@
             "name": "customer populates the basic details on the HomePage",
             "result": {
               "status": "passed",
-              "duration": 658000000
+              "duration": 1086000000
             }
           }
         ]
