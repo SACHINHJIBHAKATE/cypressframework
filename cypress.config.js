@@ -38,5 +38,5 @@ module.exports = defineConfig({
     
     // Following line is added for Test Runner to identify the location of the feature files
     // specPattern: 'cypress/integration/examples/BDD/*.feature'
-  },
+  }, 
 })

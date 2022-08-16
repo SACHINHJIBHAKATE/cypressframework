@@ -1,4 +1,4 @@
-// Objective of this test is to do hands on excercises on:
+// Objective of this test is to do hands on exercises on:
 // 1) CHECKBOXES
 // 2) DROPDOWNS (STATIC & DYNAMIC)
 // 3) VISIBLE & INVISIBLE ELEMENTS
