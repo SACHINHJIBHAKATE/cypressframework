@@ -12,7 +12,9 @@
     "test_record": "npm run test_headed -- --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
     "test_record_onespecfile": "npm run test_onespecfile -- --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
     "test_multiplespecfiles_all_files_in_a_folder": "npm run test_headed -- --spec \"cypress/integration/Greenkart/*\"",
-    "test_CucumberBDD_Featurefile": "npm run test -- --spec cypress/integration/examples/BDD/ecommerce.feature --headed --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8"
+    "test_CucumberBDD_Featurefile": "npm run test -- --spec cypress/integration/examples/BDD/ecommerce.feature --headed --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
+    "test_CucumberBDD_Featurefile_parallel": "npm run test -- --spec cypress/integration/examples/BDD/ecommerce.feature --headed --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8 --parallel"
+
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
