@@ -29,7 +29,6 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.3.0",
-    "CYPRESS_CACHE_FOLDER": "~/.cache/Cypress",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
