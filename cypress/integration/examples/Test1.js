@@ -5,7 +5,7 @@
 // The Cypress App gives you a visual structure of suites, tests, and assertions. 
 // What are describe, it, and expect?
 // All of these functions come from Bundled Libraries that Cypress bakes in.
-// describe and it come from Mocha
+// describe and it come from Mocha.
 // expect comes from Chai
 // Cypress builds on these popular tools and frameworks that you hopefully already have some familiarity and knowledge of. If not, that's okay too.
 
