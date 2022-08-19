@@ -36,7 +36,7 @@ it ('My First Test Case',function(){
 
     // This adds an explicit wait 
     // This is required in this scenario because there is no loading icon displayed when user types 'ca' & before the 4 products are displayed on the web page,
-    // therefore since loading icon doesn't appear, cypress won't have an idea to wait for the 4 products to appear on the web page
+    // therefore, since loading icon doesn't appear, cypress won't have an idea to wait for the 4 products to appear on the web page
     cy.wait(2000)
 
     // if we don't use :visible, cypress identifies visible as well as invisible elements on the web page based on the CSS selector
