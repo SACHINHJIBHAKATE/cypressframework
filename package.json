@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "CYPRESS_CACHE_FOLDER": "~/.cache/Cypress",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
     "test_headed": "npm run test -- --headed",
