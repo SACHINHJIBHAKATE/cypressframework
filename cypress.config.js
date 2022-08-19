@@ -19,7 +19,6 @@ module.exports = defineConfig({
     url1:'https://rahulshettyacademy.com/seleniumPractise/#/',
     url2:'https://rahulshettyacademy.com/AutomationPractice/',
     url3:'https://rahulshettyacademy.com/angularpractice/',
-    CYPRESS_CACHE_FOLDER: '~/.cache/Cypress'
   },
 
   "retries": {
