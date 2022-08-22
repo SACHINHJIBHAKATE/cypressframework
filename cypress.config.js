@@ -21,6 +21,17 @@ module.exports = defineConfig({
     url3:'https://rahulshettyacademy.com/angularpractice/',
   },
 
+  "db": {
+    "userName": "cypressazureid",
+    "password": "Azuredb765@",
+    "server": "cypressazuredb.database.windows.net",
+    "options": {
+        "database": "CypressDB",
+        "encrypt": true,
+        "rowCollectionOnRequestCompletion" : true
+    }
+},
+
   "retries": {
     // Configure retry attempts for `cypress run`
     // Default is 0
