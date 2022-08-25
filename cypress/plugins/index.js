@@ -14,7 +14,7 @@
 
 const sqlServer = require('cypress-sql-server');
 
-const dbConfig = require('../../cypress.config.js')
+const dbConfig = require('../../cypress.config');
 
 /**
  * @type {Cypress.PluginConfig}
