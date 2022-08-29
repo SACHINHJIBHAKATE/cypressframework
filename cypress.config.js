@@ -45,9 +45,9 @@ module.exports = defineConfig({
     },
     // Following line is added for Test Runner to identify the location of the spec files (test cases)
     // The file (cypress.config.js) was automatically created by Test Runner once we selected 'E2E Testing' in Test Runner' & therefore Test Runner has knowledge about this file
-    // specPattern: 'cypress/integration/**/*.js'
+    specPattern: 'cypress/integration/**/*.js'
     
     // Following line is added for Test Runner to identify the location of the feature files
-    specPattern: 'cypress/integration/examples/BDD/*.feature'
+    // specPattern: 'cypress/integration/examples/BDD/*.feature'
   }, 
 })
