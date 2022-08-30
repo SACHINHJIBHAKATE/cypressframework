@@ -13,7 +13,7 @@
     "test_record_onespecfile": "npm run test_onespecfile -- --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
     "test_multiplespecfiles_all_files_in_a_folder": "npm run test_headed -- --spec \"cypress/integration/Greenkart/*\"",
     "test_CucumberBDD_Featurefile_record": "npm run test -- --spec cypress/integration/examples/BDD/ecommerce.feature --headed --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
-    "test_CucumberBDD_Featurefile_parallel": "npm run test -- --spec cypress/integration/examples/BDD/ecommerce.feature --headed --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8 --parallel",
+    "test_CucumberBDD_Featurefile_record_parallel": "npm run test -- --spec cypress/integration/examples/BDD/ecommerce.feature --headed --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8 --parallel",
     "test_chrome_headed_record": "npm run test_headed -- --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
     "test_chrome_headed_record_parallel": "npm run test_headed -- --browser chrome --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8 --parallel"
   },
@@ -24,7 +24,7 @@
       "outputFolder": "cypress/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
-    }
+    }_
   },
   "author": "",
   "license": "ISC",
