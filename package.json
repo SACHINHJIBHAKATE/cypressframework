@@ -24,7 +24,7 @@
       "outputFolder": "cypress/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
-    }_
+    }
   },
   "author": "",
   "license": "ISC",
