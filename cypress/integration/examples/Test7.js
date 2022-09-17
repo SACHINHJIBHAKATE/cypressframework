@@ -14,7 +14,7 @@ describe('My Sixth Test Suite',function(){
             // When the loop iterates, we are comparing if the course name matches the stated course for which we need to retrieve the price
             if ($el.text()==='Master Selenium Automation in simple Python Language')
             {
-                // once the course name matches & once we are in this loop, we need to retrieve the price siblin element (logic below)
+                // once the course name matches & once we are in this loop, we need to retrieve the price sibling element (logic below)
                 // cy.get("table[name='courses'] tbody tr td:nth-child(2)") ==> This retrieves all the course elements from the Courses column
                 // eq(index) method then locates the elements (from the list of elements) using the index provided,
                 // so this will locate the course element

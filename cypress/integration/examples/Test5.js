@@ -24,9 +24,16 @@ describe('My Fifth Test Suite',function(){
         // on() method trigers the events & has 2 arguments 1) event name & 2) string variable where the captured string text from the alert will be stored)
         // On top of the cypress command on(), as we are performing additional action, where the captured string text from the alert is stored in a variable, we need to resolve the promise) 
         // => i.e. pipe operator is used instead if function.then() to resolve the promise
+        
+        /*
+        cy.on('window:alert').then(function(str)
+        {
+            expect(str).to.equal('Hello , share this practice page and share your knowledge')
+        })
+        */
         cy.on('window:alert', (str) => {
 
-            // This ia a Chai library assertion to check if the captured string value matches the actual string text on the alert
+            // This is a Chai library assertion to check if the captured string value matches the actual string text on the alert
             // format: expect(string variable where captured string text is stored).to.equal('actual string text')
             expect(str).to.equal('Hello , share this practice page and share your knowledge')
         })

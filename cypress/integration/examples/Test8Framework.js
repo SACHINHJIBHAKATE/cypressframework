@@ -129,7 +129,7 @@ describe('My Eighth Test Suite',function(){
         // SCENARIO START:
 
         // STEP 1:
-        // cy. get('tr td:nth-child(4) strong') ==> This will return all the price elements in the 4th column (Refer point 10) in the Cypress Notes.doc)
+        // cy.get('tr td:nth-child(4) strong') ==> This will return all the price elements in the 4th column (Refer point 10) in the Cypress Notes.doc)
         // We then need to iterate through each elemnt & sum them 
         // This variable s required to sum the prices. As the value of the variable will change after adding price for each element, use var instead of const.
         var sum=0
@@ -146,18 +146,18 @@ describe('My Eighth Test Suite',function(){
             // We need to split the text using space, so text is splitted in 2 parts & then grab the value at the 1st index of the array which is the product price
             var price = productprice.split(" ")
             // cy.log(price)
-            // If we have to use the variable again to perform more operations like in this case, we need grab the value at the 1st index of the array & then trim the text to remove any possible spaces before or after 50000 & 65000, then use 'var' or use 'const'
+            // If we have to use the variable again to perform more operations like in this case, we need grab the value at the 1st index of the array & then trim the text to remove any possible spaces before or after 50000 & 65000, then use 'var' instead of 'const'
             price = price[1].trim()
             // cy.log(price)
 
-            // This will add the price of each proudct to sum variable
+            // This will add the price of each product to sum variable
             // As we need to sum, we need to convert value in price variable (which is a string) to number, so use Number() method in javascript - Number(price)
             // Even if we delcared var sum = 0, javascript still treats it as string, so we need to convert value in sum variable (which is a string) to number, so use Number() method in javascript - Number(sum) 
             sum = Number(sum) + Number(price)
         }).then(function(){
             // Since we have defined sum=0 at the start, when spec file runs, since javascript is asynchronous, we need to tell cypress to print sum AFTER the above loop is executed else since sum value is available, cy.log(sum) will be executed at the start BEFORE the loop is executed as sum value is available 
             // therefore we need to include 'cy.log(sum)' in .then(function){} ater the loop.
-            // Cypress have intelligence to execute cypress steps in sequence but becuase steps in the above loop e.g split, trim are not cypress steps (they are jQuery steps), cypress step which is cy.log(sum) is executed before the loop if we don't include it under .then(function{}) - which means execure cy.log(sum) after the loop is executed
+            // Cypress have intelligence to execute cypress steps in sequence but becuase steps in the above loop e.g split, trim are not cypress steps (they are jQuery steps), cypress step which is cy.log(sum) is executed before the loop if we don't include it under .then(function{}) - which means execute cy.log(sum) after the loop is executed
             cy.log(sum)
         })
 

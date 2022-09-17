@@ -9,9 +9,7 @@ describe('My Twelth Test Suite',function(){
             // We can log the database data
             console.log(dbdata)
 
-            // dbdata[0] ==> This points to the 1st row at 0th index
-            // then dbdata[0][1] points to the value at the column value at the 1st index which is 2nd column
-            // therefore,  console.log(dbdata[0][1]) ===> this should log 'Jerssey'
+            //  console.log(dbdata[0][1]) ===> this should log 'Jerssey'
             console.log(dbdata[0][1])
 
             // PersonID    LastName   FirstName   City

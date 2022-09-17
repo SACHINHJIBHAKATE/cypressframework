@@ -1,5 +1,5 @@
 // Objective of this test is to do hands on exercises for Advanced Automation feature such as handling child tabs & browser navigations
-// In this sceanrio, the domain of the first URL is the same as the domain of the second URL
+// In this scenario, the domain of the first URL is the same as the domain of the second URL
 // Domain of the first URL: rahulshettyacademy.com
 // Domain of the second URL (URL of the new webpage): rahulshettyacademy.com
 // However, the approach (for handling child tabs) used in this spec file can also be used when the domain of the second URL is "different" from the domain of the first URL
@@ -14,7 +14,7 @@ describe('My Sixth Test Suite',function(){
 
         // Cypress does not support child tabs 
         // and therefore for automating the child tabs, we need to open the link in same tab
-        // To open the link in the same tab, we need tp remove the target attribute in the HTML code for that element which opens the link in the child tab
+        // To open the link in the same tab, we need to remove the target attribute in the HTML code for that element which opens the link in the child tab
         // <a id="opentab" class="btn-style class1 class2" href="https://www.rahulshettyacademy.com/" target="_blank">Open Tab</a>
         // Cypress has the ability to manipulate the DOM i.e. the HTML code
         // For removing the attribute from the DOM, we have a function called removeAttr() in jQuery
@@ -30,13 +30,13 @@ describe('My Sixth Test Suite',function(){
         cy.get("#opentab").invoke('removeAttr','target').click()
 
         // Now, if we need want to check if the navigation is successful, we need to validate the URL of new web page
-        // cy.url() ==> This returns the current URL of the page that is currently active.
+        // cy.url() ==> This returns the URL of the page that is currently active.
         // then, we can apply the chai library assertion
 
-        // When applying assertion on URL, we need to inclide 'eq' in place of 'have.value'
+        // When applying assertion on URL, we need to include 'eq' in place of 'have.value'
         // e.g. for URL = http://localhost:8000/users/1/edit
         // cy.url().should('eq', 'http://localhost:8000/users/1/edit')
-        // We can also include assertion to valiate the partial text in the URL, like below.
+        // We can also include assertion to validate the partial text in the URL, like below.
         // cy.url().should('include', '/users/1/edit') 
         // Reference: https://docs.cypress.io/api/commands/url#No-Args
 

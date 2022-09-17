@@ -37,7 +37,7 @@ describe('My Ninth Test Suite',function(){
         // Reference: https://docs.cypress.io/api/commands/click#Coordinates
         // Use ‘contains()’ method with the element text to click the element with the desired text
         // For clicking the 'Top' option, we can use the below:
-        cy.contains('Top').click()
+        cy.contains('Top').click({ force: true })
         cy.url().should('include','top')
 
 

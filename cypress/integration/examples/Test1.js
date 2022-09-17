@@ -118,7 +118,7 @@ it ('My First Test Case',function(){
 
             // In order to check if the command is supported by cypress, navigate to 'https://docs.cypress.io/api/table-of-contents' & under the 'Commands' section search for the command. If the command is found, it means, cypress supports that command.
             // e.g. if we search for 'text' command, it can't be found under the above cypress documentation, which means 'text() is not a cypress command
-            // Cypress supporst JQuery methods
+            // Cypress supports jQuery methods
 
             // then() method waits until the promise is resolved and once promose is resolved, 
             // stores the command output (i.e. element in this scenario) in 'logoelement'
