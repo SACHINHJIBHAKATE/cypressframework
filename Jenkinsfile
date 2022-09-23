@@ -11,9 +11,7 @@ pipeline {
                         label "Nodeone"
                     }
                     steps {
-                        git url: 'https://github.com/SACHINHJIBHAKATE/cypressframework.git'
-                        bat 'npm install'
-                        bat 'npm run test_CucumberBDD_Featurefile_record_parallel'
+                        // WRITE YOUR STEPS HERE
                     }
                 }
                 stage('Slave Node2') {
@@ -21,9 +19,7 @@ pipeline {
                         label "Nodetwo"
                     }
                     steps {
-                        git url: 'https://github.com/SACHINHJIBHAKATE/cypressframework.git'
-                        bat 'npm install'
-                        bat 'npm run test_CucumberBDD_Featurefile_record_parallel'
+                        // WRITE YOUR STEPS HERE
                     }
                 }
             }
