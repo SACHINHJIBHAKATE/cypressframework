@@ -7,6 +7,6 @@ it ('My Test Case',function(){
 
      cy.visit('https://automationteststore.com/')
 
-    cy.get("button[type='submit']").click()  
+    cy.xpath("//a[text()='Contact Us']").click()
 })
 })
