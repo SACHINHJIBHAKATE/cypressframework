@@ -25,7 +25,7 @@
 // Note: One of the best things about cypress is that, if the test runner & browser is open & if we make additional changes to the spec file, then if we can just save the spec file, test starts running automatically from the first step.
 describe('My First Test Suite - UPDATED',function(){
 
-it ('My First Test Case',function(){
+it ('My First Test Case - UPDATED',function(){
 
     // cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
     // Instead of hard coding the website URL (as done above), define the URL in the 'cypress.config.js' file,
