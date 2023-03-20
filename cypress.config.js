@@ -35,7 +35,7 @@ module.exports = defineConfig({
   "retries": {
     // Configure retry attempts for `cypress run`
     // Default is 0
-    "runMode": 1
+    "runMode": 0
   },
   
   e2e: {
