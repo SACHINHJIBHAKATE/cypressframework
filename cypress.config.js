@@ -37,17 +37,29 @@ module.exports = defineConfig({
     // Default is 0
     "runMode": 0
   },
-  
+
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: 'Cypress Mochawesome Report',
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
+    reportFilename: "[status]_[datetime]-[name]-report",
+    code: false,
+    overwrite: false,
+  },
   e2e: {
     setupNodeEvents(on, config) {
       const cucumber = require('cypress-cucumber-preprocessor').default;
       on('file:preprocessor', cucumber())
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
     // Following line is added for Test Runner to identify the location of the spec files (test cases)
     // The file (cypress.config.js) was automatically created by Test Runner once we selected 'E2E Testing' in Test Runner' & therefore Test Runner has knowledge about this file
-    // specPattern: 'cypress/integration/**/*.js'
+    specPattern: 'cypress/integration/**/*.js'
     
     // Following line is added for Test Runner to identify the location of the feature files
-    specPattern: 'cypress/integration/examples/BDD/*.feature'
+    // specPattern: 'cypress/integration/examples/BDD/*.feature'
   }, 
 })
