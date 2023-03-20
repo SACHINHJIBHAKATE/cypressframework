@@ -28,7 +28,7 @@
             "name": "customer launch the Ecommerce website",
             "result": {
               "status": "passed",
-              "duration": 1593000000
+              "duration": 1617000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "customer populates the basic details on the HomePage",
             "result": {
               "status": "passed",
-              "duration": 2582000000
+              "duration": 1762000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "selects the products from the ProductsPage",
             "result": {
               "status": "passed",
-              "duration": 1141000000
+              "duration": 467000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "confirms checkout from the CheckoutPage",
             "result": {
               "status": "passed",
-              "duration": 352000000
+              "duration": 113000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "confirms purchase from the PurchasePage",
             "result": {
               "status": "passed",
-              "duration": 6156000000
+              "duration": 5442000000
             }
           },
           {
@@ -77,8 +77,9 @@
             "line": 11,
             "name": "products purchase is successful",
             "result": {
-              "status": "passed",
-              "duration": 144000000
+              "status": "failed",
+              "duration": 312000000,
+              "error_message": "AssertionError: expected false to be true\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:114:50)"
             }
           }
         ]
@@ -103,7 +104,7 @@
             "name": "customer launch the Ecommerce website",
             "result": {
               "status": "passed",
-              "duration": 452000000
+              "duration": 678000000
             }
           },
           {
@@ -113,7 +114,7 @@
             "name": "customer populates the basic details on the HomePage",
             "result": {
               "status": "passed",
-              "duration": 1086000000
+              "duration": 633000000
             }
           }
         ]
