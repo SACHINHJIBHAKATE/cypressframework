@@ -62,7 +62,7 @@ describe('My Eighth Test Suite',function(){
         // Following line of code is the written (instead of the above line of code) using page objects
         homePage.getTwowaydatabindingfield().should('have.value',this.data.name)
 
-        // For the 'name' field, we need to validate the 'minlength' property (attribute) i.e. minimum length of the field ==> for vaidating any attribute, we can use the below technique
+        // For the 'name' field, we need to validate the 'minlength' property (attribute) i.e. minimum length of the field ==> for validating any attribute, we can use the below technique
         // <input class="form-control ng-dirty ng-valid ng-touched" minlength="2" name="name" required="" type="text">
         // cy.get('input[name="name"]:nth-child(2)').should('have.attr','minlength','2')
         // Following line of code is the written (instead of the above line of code) using page objects
