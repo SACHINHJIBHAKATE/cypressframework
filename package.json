@@ -6,8 +6,8 @@
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
     "test_headed": "node_modules\\.bin\\cypress run -- --headed",
-    "test_chrome": "npm run test_headed -- --browser chrome",
     "test_onespecfile": "npm run test_headed -- --spec cypress/integration/examples/Test8Framework.js",
+    "test_chrome": "npm run test_headed -- --browser chrome",
     "test_edge": "npm run test_headed -- --browser edge",
     "test_record": "npm run test_headed -- --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
     "test_record_onespecfile": "npm run test_onespecfile -- --record --key 26cda711-9a3d-475c-a30b-8d9a1f42cfc8",
